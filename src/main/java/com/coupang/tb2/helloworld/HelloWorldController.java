@@ -12,4 +12,10 @@ public class HelloWorldController {
     public String helloWorld() {
         return "Hello, World!";
     }
+
+    @GetMapping("/test")
+    @ResponseBody
+    public String test() {
+        return "Hello, World! Test";
+    }
 }
